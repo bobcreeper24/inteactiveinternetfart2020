@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+/* style of the body*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* header/logo title */
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #66ff99;
+    color:#444;
+}
+
+.header h1 {
+    font-size 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #004d00;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #e9ffe6;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right{
+    float:right; 
+}
+
+.navbar a:hover:not(.active) {
+    
+}
+
+.active {
+    background-color: #ddd
+}
+.row {
+    display: -ms-flexbox;
+    display:flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex:20%;
+        flex:20%;
+    background-color: #80ff80;
+        padding:20px;
+}
+
+.main {
+    -ms-flex:80%;
+        flex:80%;
+    background-color: darkseagreen;
+        padding:20px;
+}
+
+.clearfix: :after {
+    content:"";
+    clear:both;
+    display:flex;
+}
+.button {
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.footer {
+    padding: 10px;
+        text-align: center;
+        background: #80ff80;
+}
+
+::selection {
+    color: lightcoral;
+    background: #c8f55f;
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
